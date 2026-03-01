@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aventuri în Spațiu | Aventurica</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="story-hero" style="background-color: #e0f2fe"></div>
+    <main class="container">
+      <article class="story-card">
+        <header class="story-header">
+          <span class="category-badge">🚀 Aventuri în Spațiu</span>
+          <h1>Călătoria spre Planeta de Zahăr</h1>
+          <div class="story-main-img">
+            <img src="racheta.png" alt="Rachetă spațială" />
+          </div>
+          <button class="audio-player-sticky" id="audioBtn">
+            <span class="play-icon" id="audioIcon">▶</span>
+            <span class="player-label">Ascultă povestea</span>
+          </button>
+        </header>
+
+        <section class="story-content">
+          <p>
+            <span class="drop-cap">I</span>nterdum et malesuada fames ac ante
+            ipsum primis in faucibus. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Donec
+            pretium vulputate sapien et varius.
+          </p>
+
+          <p>
+            Aenean euismod elementum nisi quis eleifend. Facilisis magna etiam
+            tempor orci eu lobortis elementum nibh. Pozuere urna nec tincidunt
+            praesent semper feugiat nibh sed pulvinar. Sit amet consectetur
+            adipiscing elit ut aliquam purus sit.
+          </p>
+        </section>
+
+        <footer class="story-footer">
+          <div class="story-nav-buttons">
+            <a href="index.html" class="btn btn-secondary">⬅ Înapoi la hartă</a>
+          </div>
+        </footer>
+      </article>
+    </main>
+    <script>
+      const audioBtn = document.getElementById('audioBtn');
+      const audioIcon = document.getElementById('audioIcon');
+      let isPlaying = false;
+
+      audioBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+
+        // Schimbăm iconița
+        if (isPlaying) {
+          audioIcon.textContent = '⏸'; // Simbol pauză
+          audioBtn.querySelector('.player-label').textContent = 'Se redă...';
+        } else {
+          audioIcon.textContent = '▶'; // Simbol play
+          audioBtn.querySelector('.player-label').textContent =
+            'Ascultă povestea';
+        }
+
+        // Aici va veni logica reală de audio mai târziu
+        console.log(isPlaying ? 'Se cântă audio' : 'Audio oprit');
+      });
+    </script>
+  </body>
+</html>
