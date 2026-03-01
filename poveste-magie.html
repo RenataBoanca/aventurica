@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="ro">
   <head>
@@ -81,3 +82,88 @@
     </script>
   </body>
 </html>
+=======
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumea Magiei | Aventurica</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="story-hero" style="background-color: #f3e8ff"></div>
+    <main class="container">
+      <article class="story-card">
+        <header class="story-header">
+          <span class="category-badge">✨ Lumea Magiei</span>
+          <h1>Secretul Zânei Steluța</h1>
+          <div class="story-main-img">
+            <img src="zana-magica.png" alt="Zână magică" />
+          </div>
+          <button class="audio-player-sticky" id="audioBtn">
+            <span class="play-icon" id="audioIcon">▶</span>
+            <span class="player-label">Ascultă povestea</span>
+          </button>
+        </header>
+
+        <section class="story-content">
+          <p>
+            <span class="drop-cap">L</span>orem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+
+          <p>
+            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam
+            varius, turpis et commodo pharetra, est eros bibendum elit, nec
+            luctus magna felis sollicitudin mauris. Integer in mauris eu nibh
+            euismod gravida.
+          </p>
+        </section>
+
+        <footer class="story-footer">
+          <div class="story-nav-buttons">
+            <a href="index.html" class="btn btn-secondary">⬅ Înapoi la hartă</a>
+          </div>
+        </footer>
+      </article>
+    </main>
+    <script>
+      const audioBtn = document.getElementById('audioBtn');
+      const audioIcon = document.getElementById('audioIcon');
+      let isPlaying = false;
+
+      audioBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+
+        // Schimbăm iconița
+        if (isPlaying) {
+          audioIcon.textContent = '⏸'; // Simbol pauză
+          audioBtn.querySelector('.player-label').textContent = 'Se redă...';
+        } else {
+          audioIcon.textContent = '▶'; // Simbol play
+          audioBtn.querySelector('.player-label').textContent =
+            'Ascultă povestea';
+        }
+
+        // Aici va veni logica reală de audio mai târziu
+        console.log(isPlaying ? 'Se cântă audio' : 'Audio oprit');
+      });
+    </script>
+  </body>
+</html>
+>>>>>>> b2da8424b93220d28108db50cd778320bea63ff7
