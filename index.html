@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pornește în Aventură | Povești Magice pentru Copii</title>
+    <meta
+      name="description"
+      content="Descoperă lumi magice, animale curajoase și aventuri de neuitat în cea mai frumoasă colecție de povești online."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container header-flex">
+        <a href="/" class="logo">
+          <span class="logo-icon">🧭</span>
+          Aventurica
+        </a>
+
+        <button class="mobile-menu-toggle" aria-label="Deschide meniul">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="#aventuri" class="nav-link">Aventuri</a></li>
+            <li><a href="#audio" class="nav-link">Ascultă</a></li>
+            <li><a href="#activitati" class="nav-link">Activități</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#search" class="btn-secondary"
+            >🔍 <span class="sr-only">Caută o poveste</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content col-6">
+            <h1>Pornește în aventura poveștilor!</h1>
+            <p>
+              Descoperă lumi magice, animale curajoase și aventuri de neuitat.
+            </p>
+            <a href="#aventuri" class="btn-primary">Explorează poveștile</a>
+          </div>
+          <div class="hero-image col-6">
+            <div class="blob-bg">
+              <img src="imagini/explorator.png" alt="Explorator" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aventuri" class="adventure-grid section-padding">
+        <div class="container">
+          <h2 class="text-center">Alege unde mergem azi?</h2>
+          <div class="cards-container">
+            <article class="card category-animals">
+              <a
+                href="poveste.html"
+                style="text-decoration: none; color: inherit"
+              >
+                <span class="icon-badge">🐾</span>
+                <div class="card-img">
+                  <img src="arici-mic.png" alt="Povestea Ariciului" />
+                </div>
+                <h3>Povești cu animale</h3>
+              </a>
+            </article>
+
+            <article class="card category-magic">
+              <a
+                href="poveste-magie.html"
+                style="text-decoration: none; color: inherit"
+              >
+                <span class="icon-badge">✨</span>
+                <div class="card-img">
+                  <img src="zana-magica.png" alt="Lumea Zanelor" />
+                </div>
+                <h3>Lumea Magiei</h3>
+              </a>
+            </article>
+
+            <article class="card category-space">
+              <a
+                href="poveste-spatiu.html"
+                style="text-decoration: none; color: inherit"
+              >
+                <span class="icon-badge">🚀</span>
+                <div class="card-img">
+                  <img src="racheta.png" alt="Aventuri Spatiale" />
+                </div>
+                <h3>Aventuri în Spațiu</h3>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+    <section id="activitati" class="activities-section">
+      <div class="blob-organic-bg"></div>
+
+      <div class="container">
+        <h2 class="text-center">Mici aventuri creative</h2>
+
+        <div class="islands-container">
+          <div class="island-card">
+            <div class="island-circle color-draw">
+              <span class="island-icon">🎨</span>
+            </div>
+            <h3>Desene de colorat</h3>
+            <p>Descarcă și dă viață personajelor!</p>
+          </div>
+
+          <div class="island-card">
+            <div class="island-circle color-games">
+              <span class="island-icon">🧩</span>
+            </div>
+            <h3>Jocuri</h3>
+            <p>Provocări distractive pentru minți istețe.</p>
+          </div>
+
+          <div class="island-card">
+            <div class="island-circle color-print">
+              <span class="island-icon">📄</span>
+            </div>
+            <h3>Printabile</h3>
+            <p>Fișe de lucru pentru micii exploratori.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info-left">
+            <div class="footer-logo">
+              <span class="logo-icon">🧭</span>
+              <span class="logo-text">Aventurica</span>
+            </div>
+            <p class="footer-tagline">
+              O lume de povești la un click distanță.
+            </p>
+          </div>
+
+          <div class="footer-nav">
+            <a href="#">Despre noi</a>
+            <a href="#">Contact</a>
+            <a href="#">Povești Audio</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Aventurica. Creat cu ❤️ pentru micii exploratori.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector('.mobile-menu-toggle');
+      const navMenu = document.querySelector('.main-nav');
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>
