@@ -143,6 +143,47 @@
       </div>
     </section>
 
+    <section id="contact" class="contact-section section-padding">
+  <div class="container">
+    <div class="contact-card">
+      <div class="contact-info">
+        <h2>Salut, exploratorule! ✉️</h2>
+        <p>Ai o întrebare sau vrei să ne trimiți o sugestie de poveste? Scrie-ne un mesaj și îți vom răspunde cât ai zice "Aventurica"!</p>
+      </div>
+      
+      <form action="#" class="contact-form">
+        <div class="form-group">
+          <label for="nume">Numele tău</label>
+          <input type="text" id="nume" name="nume" placeholder="Ex: Maria" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Adresa de e-mail</label>
+            <input type="email" id="email" name="email" placeholder="nume@exemplu.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefon">Număr de telefon</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="07xx xxx xxx" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mesaj">Mesajul tău</label>
+          <textarea id="mesaj" name="mesaj" rows="5" placeholder="Scrie-ne mesajul tau aici..." required></textarea>
+        </div>
+
+        <div class="form-checkbox">
+          <input type="checkbox" id="gdpr" name="gdpr" required />
+          <label for="gdpr">Am citit și sunt de acord cu <a href="politica-confidentialitate.html" target="_blank">Politica de Confidențialitate</a>.</label>
+        </div>
+
+        <button type="submit" class="btn-primary">Trimite Mesajul 🚀</button>
+      </form>
+    </div>
+  </div>
+</section>
+
     <footer class="main-footer">
       <div class="container">
         <div class="footer-content">
@@ -157,9 +198,9 @@
           </div>
 
           <div class="footer-nav">
-            <a href="#">Despre mine</a>
-            <a href="#">Contact</a>
-            <a href="#">Povești Audio</a>
+            <a href="despre-mine.html">Despre mine</a>
+            <a href="#contact">Contact</a>
+            <a href="#aventuri">Povești Audio</a>
           </div>
         </div>
 
